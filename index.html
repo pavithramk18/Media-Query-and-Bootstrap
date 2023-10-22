@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query and Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+<style>
+    .name{
+        background-color: aqua;
+        margin: 10px;
+        border: 2px solid gold;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    /* .name {
+        background-color: wheat;
+        font-size: 20px;
+    } */
+
+    @media screen and(max-width:600px) {
+        .name {
+            background-color: olive;
+            font-size: 30px;
+        }
+    }
+</style>
+
+<body>
+    <script src="script.js"></script>
+    <!-- <p class="name">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos eos
+        alias facere maiores, consectetur quidem labore sequi ab beatae
+        nesciunt hic vel facilis veniam adipisci saepe aperiam harum deserunt dolor.
+    </p> -->
+    <div class="name">
+    <div class="card" style="width: 18rem;">
+        <img src="data:image/png;base64,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"
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">HTML</h5>
+            <p class="card-text">HTML is the standard markup language for Web pages.
+
+                With HTML you can create your own Website.
+
+                HTML is easy to learn - You will enjoy it!
+
+            </p>
+            <a href="#" class="btn btn-primary">Learn HTML...</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">CSS</h5>
+            <p class="card-text">CSS is the language we use to style an HTML document.
+
+                CSS describes how HTML elements should be displayed.
+                
+                </p>
+            <a href="#" class="btn btn-primary">Learn CSS</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">JavaScript</h5>
+          <p class="card-text">JavaScript is the world's most popular programming language.
+
+            JavaScript is the programming language of the Web.
+            
+            JavaScript is easy to learn.</p>
+          <a href="#" class="btn btn-primary">Learn CSS</a>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
