@@ -16,3 +16,12 @@ console.log("Media Query and Bootstrap");
 
 //<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+// Bootstrap comprises of Row and column 
+
+// column can be diivided only into 12 divisions 
+// Rows can be given upto n numbers
+
+
+<div class="row">
+    <div class="col-6">col</div>
+    <div class="col-6">col</div>
